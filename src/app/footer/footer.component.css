@@ -1,0 +1,56 @@
+.container{
+    background-color: #343A40;
+    margin-top: 40px;
+    padding-top: 40px;
+  
+}
+
+.copyright{
+    background-color: #343A40;
+    text-align: center;
+    margin-top: 40px;
+   padding-bottom: 20px;
+}
+
+h4{
+    color: #ffffff;
+    font-size: 15pt;
+}
+
+.contact{
+    max-width: 300px;
+    margin: auto;
+}
+
+.social{
+    max-width: 300px;
+    margin: auto;
+}
+
+.message{
+    max-width: 300px;
+    margin: auto;
+    color: #ffffff;
+    font-size: 15pt;
+}
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 30px;
+  }
+
+  p{
+      font-size: 15pt;
+      color: gray;
+  }
+
+  @media(max-width: 600px){
+      .footer{
+        grid-template-columns: 1fr ;
+      }
+
+      h4{
+          text-align: center;
+      }
+  }

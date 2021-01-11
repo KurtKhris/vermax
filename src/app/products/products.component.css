@@ -1,0 +1,30 @@
+.mat-card{
+    max-width: 500px;
+    margin: auto;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+  }
+
+  .container{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+@media(max-width: 600px){
+    .products {
+        grid-template-columns: 1fr ;
+      }
+
+      .mat-card{
+          max-width: 300px;
+      }
+}
