@@ -38,7 +38,7 @@ export class CarouselComponent implements OnInit {
         items: 1
       }
     },
-    nav: true
+    // nav: true
   }
 
 }

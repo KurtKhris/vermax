@@ -1,0 +1,30 @@
+.mat-card{
+    max-width: 300px;
+    margin: auto;
+}
+
+.container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1{
+    font-size: xx-large;
+    margin-top: 20px;
+}
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+   
+  }
+
+.founder{
+    margin-bottom: 20px;
+}  
+
+ @media(max-width: 600px){
+     .team{
+        grid-template-columns: 1fr ;
+     }
+ }

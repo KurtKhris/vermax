@@ -4,7 +4,7 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar color="">Menu</mat-toolbar>
+    <mat-toolbar color="accent">Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#home"><mat-icon>home</mat-icon>Home</a>
       <a mat-list-item href="#services"><mat-icon>settings</mat-icon>Services</a>
@@ -35,6 +35,7 @@
       <!-- <a mat-list-item href="#">Services</a> -->
       <a mat-list-item href="#products"> <mat-icon>shopping_cart</mat-icon> Products</a>
       <a mat-list-item href="#about"> <mat-icon>group</mat-icon> About</a>
+      <a mat-list-item href="#team"> <mat-icon>groups</mat-icon> The Team</a>
       <a mat-list-item href="#chat"> <mat-icon>chat</mat-icon>Chat Us</a>
 
     
@@ -42,7 +43,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar   class="app-toolbar navbar-dark">
+    <mat-toolbar color="accent"  class="app-toolbar">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -51,7 +52,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span class="vermax"><a href="#home"><img style="width: 80px;" src="assets/logo13.png">Vermax Industries</a></span>
+      <span class="vermax"><a href="#home"><img style="width: 80px;" src="assets/logo13.png"> {{title}} </a></span>
 
       <div class="spacer"></div>
     
@@ -86,6 +87,7 @@
     <!-- <a mat-button routerLink="services">Services</a> -->
     <a mat-button href="#products"><mat-icon>shopping_cart</mat-icon>Products</a>
     <a mat-button href="#about"><mat-icon>group</mat-icon>About</a>
+    <a mat-button href="#team"> <mat-icon>groups</mat-icon> The Team</a>
     <a mat-button href="#chat"><mat-icon>chat</mat-icon>Chat Us</a>
     </div>
   

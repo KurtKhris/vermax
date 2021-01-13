@@ -35,6 +35,7 @@ import { NetworkingModalComponent } from './our-services/networking-modal/networ
 import { IgofixModalComponent } from './products/igofix-modal/igofix-modal.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { TeamComponent } from './team/team.component';
 
 
 
@@ -58,7 +59,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
     AugmentModalComponent,
     ConsultancyModalComponent,
     NetworkingModalComponent,
-    IgofixModalComponent
+    IgofixModalComponent,
+    TeamComponent
     
    
   ],
