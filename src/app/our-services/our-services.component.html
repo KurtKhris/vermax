@@ -1,95 +1,103 @@
-<div class="container">
-    <h1>Our Services</h1>
-</div>
-
-<div class="services">
-    <section >
-        <mat-card>
-            <img mat-card-image src="/assets/Optimized-hardware.jpg" alt="">
-            <mat-card-content>
-                <p>
-                    Some quick example text to build on the card 
-                    title and make up the bulk of the card's content
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button color="primary">Read More</button>
-            </mat-card-actions>
-        </mat-card>
-    </section>
-
-    <section >
-        <mat-card>
-            <img mat-card-image src="/assets/Optimized-digitalMarketing.jpg" alt="">
-            <mat-card-content>
-                <p>
-                    Some quick example text to build on the card 
-                    title and make up the bulk of the card's content
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button color="primary">Read More</button>
-            </mat-card-actions>
-        </mat-card>
-    </section>
-
-    <section >
-        <mat-card>
-            <img mat-card-image src="/assets/Optimized-instalation.jpg" alt="">
-            <mat-card-content>
-                <p>
-                    Some quick example text to build on the card 
-                    title and make up the bulk of the card's content
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button color="primary">Read More</button>
-            </mat-card-actions>
-        </mat-card>
-    </section>
-
-    <section >
-        <mat-card>
-            <img mat-card-image src="/assets/Optimized-dev.jpg" alt="">
-            <mat-card-content>
-                <p>
-                    Some quick example text to build on the card 
-                    title and make up the bulk of the card's content
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button color="primary">Read More</button>
-            </mat-card-actions>
-        </mat-card>
-    </section>
-
-    <section >
-        <mat-card>
-            <img mat-card-image src="/assets/Optimized-softwaredev.jpg" alt="">
-            <mat-card-content>
-                <p>
-                    Some quick example text to build on the card 
-                    title and make up the bulk of the card's content
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button color="primary">Read More</button>
-            </mat-card-actions>
-        </mat-card>
-    </section>
-
-    <section >
-        <mat-card>
-            <img mat-card-image src="/assets/Optimized-systemAdmin.jpg" alt="">
-            <mat-card-content>
-                <p>
-                    Some quick example text to build on the card 
-                    title and make up the bulk of the card's content
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-raised-button color="primary">Read More</button>
-            </mat-card-actions>
-        </mat-card>
-    </section>
-</div>
+<section id="services">
+    <div class="container">
+        <h1 >Our Services</h1>
+    </div>
+    
+    <div class="services">
+        <section >
+            <mat-card>
+                <mat-card-title align="center">Hardware Maintenance</mat-card-title>
+                <img mat-card-image src="/assets/Optimized-hardware.jpg" alt="">
+                <mat-card-content>
+                    <p>
+                        Some quick example text to build on the card 
+                        title and make up the bulk of the card's content
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="onHardware()">Read More</button>
+                </mat-card-actions>
+            </mat-card>
+        </section>
+    
+        <section >
+            <mat-card>
+                <mat-card-title align="center">Software Development</mat-card-title>
+                <img mat-card-image style="height: 200px;" src="/assets/Optimized-digitalMarketing.jpg" alt="">
+                <mat-card-content>
+                    <p>
+                        Some quick example text to build on the card 
+                        title and make up the bulk of the card's content
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="onSoftware()">Read More</button>
+                </mat-card-actions>
+            </mat-card>
+        </section>
+    
+        <section >
+            <mat-card>
+                <mat-card-title align="center">System Administration</mat-card-title>
+                <img mat-card-image src="/assets/Optimized-instalation.jpg" alt="">
+                <mat-card-content>
+                    <p>
+                        Some quick example text to build on the card 
+                        title and make up the bulk of the card's content
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="onSystem()">Read More</button>
+                </mat-card-actions>
+            </mat-card>
+        </section>
+    
+        <section >
+            <mat-card>
+                <mat-card-title align="center">Consultancy</mat-card-title>
+                <img mat-card-image src="/assets/Optimized-dev.jpg" alt="">
+                <mat-card-content>
+                    <p>
+                        Some quick example text to build on the card 
+                        title and make up the bulk of the card's content
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="onConsult()">Read More</button>
+                </mat-card-actions>
+            </mat-card>
+        </section>
+    
+        <section >
+            <mat-card>
+                <mat-card-title align="center">Augmented Reality</mat-card-title>
+                <img mat-card-image src="/assets/Optimized-softwaredev.jpg" alt="">
+                <mat-card-content>
+                    <p>
+                        Some quick example text to build on the card 
+                        title and make up the bulk of the card's content
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="onAugment()">Read More</button>
+                </mat-card-actions>
+            </mat-card>
+        </section>
+    
+        <section >
+            <mat-card>
+                <mat-card-title align="center">Computer Networking</mat-card-title>
+                <img mat-card-image src="/assets/Optimized-systemAdmin.jpg" alt="">
+                <mat-card-content>
+                    <p>
+                        Some quick example text to build on the card 
+                        title and make up the bulk of the card's content
+                    </p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" (click)="onNetwork()">Read More</button>
+                </mat-card-actions>
+            </mat-card>
+        </section>
+    </div>
+</section>

@@ -4,11 +4,12 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-toolbar color="">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#"><mat-icon>home</mat-icon>Home</a>
-      <button mat-button [matMenuTriggerFor]="menu">
-        <mat-icon>settings</mat-icon>Services <mat-icon>arrow_drop_down</mat-icon> 
+      <a mat-list-item href="#home"><mat-icon>home</mat-icon>Home</a>
+      <a mat-list-item href="#services"><mat-icon>settings</mat-icon>Services</a>
+      <!-- <button mat-button [matMenuTriggerFor]="menu">
+        <mat-icon>settings</mat-icon><a href="#services">Services</a> <mat-icon>arrow_drop_down</mat-icon> 
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
@@ -30,18 +31,18 @@
       <mat-icon>headset_mic</mat-icon>
       <span>Consultancy</span>
   </button>
-    </mat-menu>
+    </mat-menu> -->
       <!-- <a mat-list-item href="#">Services</a> -->
-      <a mat-list-item href="#"> <mat-icon>shopping_cart</mat-icon> Products</a>
-      <a mat-list-item href="#"> <mat-icon>group</mat-icon> About</a>
-      <a mat-list-item href="#"> <mat-icon>chat</mat-icon>Chat Us</a>
+      <a mat-list-item href="#products"> <mat-icon>shopping_cart</mat-icon> Products</a>
+      <a mat-list-item href="#about"> <mat-icon>group</mat-icon> About</a>
+      <a mat-list-item href="#chat"> <mat-icon>chat</mat-icon>Chat Us</a>
 
     
 
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary" class="app-toolbar">
+    <mat-toolbar   class="app-toolbar navbar-dark">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -50,15 +51,16 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>{{title}}</span>
+      <span class="vermax"><a href="#home"><img style="width: 80px;" src="assets/logo13.png">Vermax Industries</a></span>
 
       <div class="spacer"></div>
     
     <div class="head">
-      <a mat-button routerLink="home"><mat-icon>home</mat-icon> Home</a>
+      <a mat-button href="#home"><mat-icon>home</mat-icon> Home</a>
+      <a mat-button href="#services"><mat-icon>settings</mat-icon>Services</a>
 
-    <button mat-button [matMenuTriggerFor]="menu">
-      <mat-icon>settings</mat-icon>Services <mat-icon>arrow_drop_down</mat-icon> 
+    <!-- <button mat-button [matMenuTriggerFor]="menu">
+      <mat-icon>settings</mat-icon><a href="#services">Services</a> <mat-icon>arrow_drop_down</mat-icon> 
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>
@@ -80,11 +82,11 @@
         <mat-icon>headset_mic</mat-icon>
         <span>Consultancy</span>
     </button>
-    </mat-menu>
+    </mat-menu> -->
     <!-- <a mat-button routerLink="services">Services</a> -->
-    <a mat-button routerLink="products"><mat-icon>shopping_cart</mat-icon>Products</a>
-    <a mat-button routerLink="about"><mat-icon>group</mat-icon>About</a>
-    <a mat-button routerLink="chat"><mat-icon>chat</mat-icon>Chat Us</a>
+    <a mat-button href="#products"><mat-icon>shopping_cart</mat-icon>Products</a>
+    <a mat-button href="#about"><mat-icon>group</mat-icon>About</a>
+    <a mat-button href="#chat"><mat-icon>chat</mat-icon>Chat Us</a>
     </div>
   
     </mat-toolbar>

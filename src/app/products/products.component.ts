@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { IgofixModalComponent } from './igofix-modal/igofix-modal.component';
+
 
 @Component({
   selector: 'app-products',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  onIgofix(){
+    this.dialog.open(IgofixModalComponent);
   }
 
 }

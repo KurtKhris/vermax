@@ -1,35 +1,41 @@
-<div class="container">
-    <div class="footer">
-        <section class="contact">
-            <h4>contact us</h4>
-            <p><span><mat-icon>call</mat-icon>+233247154259</span></p>
-            <p><span><mat-icon>email</mat-icon>vermaxindustries@gmail.com</span></p>
-            <p><span><mat-icon>email</mat-icon>info@vermaxindustries.com</span></p>
-        </section>
-
-        <section class="social">
-            <h4>social media</h4>
-            <p><span><img src="assets/tweet.png" width="25px">@vermaxindustries</span></p>
-            <p><span><img src="assets/inst.png" width="25px">vermaxindustries</span></p>
-            <p><span><img src="assets/tweet.png" width="25px">vermaxindustries</span></p>
-        </section>
-
-        <section class="message">
-            
-            <form action="">
-                <mat-label>Full Name</mat-label> <br>
-                <input matInput><br><br>
-
-                <mat-label>Email</mat-label><br>
-                <input matInput><br><br>
-                <small>We'll never share your email<br> with anyone else.</small><br>
-                <button mat-raised-button color="warn">sign up</button>
-            </form>
-        </section>
+<footer class="bg-dark text-light p-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4>contact us</h4>
+                <p><i><span><fa-icon [icon]="faMobile"></fa-icon>+233247154259</span></i></p>
+                <p><i><span><fa-icon [icon]="faEnvelope"></fa-icon>vermaxindustries@gmail.com</span></i></p>
+                <p><i><span><fa-icon [icon]="faEnvelope"></fa-icon>info@vermaxindustries.com</span></i></p>
+                
+            </div>
+            <div class="col-sm-4 ">
+                <h4>social media</h4>
+                <p><i> <span><fa-icon [icon]="faTwitter"></fa-icon>@vermaxindustries</span></i></p>
+                <p><i> <span><fa-icon [icon]="faInstagram"></fa-icon>vermaxindustries</span></i></p>
+                <p><i> <span><fa-icon [icon]="faFacebook"></fa-icon>vermaxindustries</span></i></p>
+            </div>
+            <div class="col-sm-4">
+                <h4>News letter</h4>
+                    <form action="mailto:vermaxindustries@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <button type="submit" class="btn btn-danger">sign up</button>
+                    </form>
+            </div>
+        </div>
     </div>
-<br>
-<hr>
-    <div class="copyright">
+<div class="container-fluid">
+<hr class="bg-light">
+</div>
+    <div class="container text-center text-light">
         <p >© 2020 Copyright: VERMAX INDUSTIRES</p>
     </div>
-</div>
+  </footer>

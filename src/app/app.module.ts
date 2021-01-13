@@ -25,6 +25,19 @@ import { VermaxComponent } from './vermax/vermax.component';
 import { ProductsComponent } from './products/products.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatInputModule} from '@angular/material/input';
+import {MatDialogModule} from '@angular/material/dialog';
+import { SoftwareModalComponent } from './our-services/software-modal/software-modal.component';
+import { HardwareModalComponent } from './our-services/hardware-modal/hardware-modal.component';
+import { SystemModalComponent } from './our-services/system-modal/system-modal.component';
+import { AugmentModalComponent } from './our-services/augment-modal/augment-modal.component';
+import { ConsultancyModalComponent } from './our-services/consultancy-modal/consultancy-modal.component';
+import { NetworkingModalComponent } from './our-services/networking-modal/networking-modal.component';
+import { IgofixModalComponent } from './products/igofix-modal/igofix-modal.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
+
+
 
 
 
@@ -38,7 +51,16 @@ import {MatInputModule} from '@angular/material/input';
     OurServicesComponent,
     VermaxComponent,
     ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    SoftwareModalComponent,
+    HardwareModalComponent,
+    SystemModalComponent,
+    AugmentModalComponent,
+    ConsultancyModalComponent,
+    NetworkingModalComponent,
+    IgofixModalComponent
+    
+   
   ],
   imports: [
     BrowserModule,
@@ -56,7 +78,10 @@ import {MatInputModule} from '@angular/material/input';
     MatCarouselModule.forRoot(),
     CarouselModule,
     MatCardModule,
-    MatInputModule
+    MatInputModule,
+    MatDialogModule,
+    FontAwesomeModule,
+    MDBBootstrapModule
   ],
   providers: [],
   bootstrap: [AppComponent]

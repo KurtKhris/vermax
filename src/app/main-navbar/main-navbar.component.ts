@@ -9,7 +9,7 @@ import { map, shareReplay } from 'rxjs/operators';
   styleUrls: ['./main-navbar.component.css']
 })
 export class MainNavbarComponent {
-  title = 'Vermax Industries';
+  // title = 'Vermax Industries';
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
