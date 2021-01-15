@@ -27,6 +27,10 @@ h3{
 
 }
 
+.mission{
+    margin-top: 20px;
+}
+
 .choose{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -34,7 +38,7 @@ h3{
     margin-top: 30px;
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .choose{
         grid-template-columns: 1fr ;
     }
@@ -51,3 +55,35 @@ h3{
         max-width: 300px;
     }
 }
+
+/* @media(max-width: 900px){
+    .choose{
+       grid-template-columns: 1fr 1fr ;
+    }
+
+    .mat-card{
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 320px){
+    .choose{
+        display: grid;
+       grid-template-columns: 1fr ;
+    }
+
+    .mat-card{
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 411px){
+    .choose{
+        display: grid;
+       grid-template-columns: 1fr ;
+    }
+
+    .mat-card{
+        max-width: 350px;
+    }
+} */

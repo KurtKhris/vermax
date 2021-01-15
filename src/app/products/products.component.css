@@ -19,7 +19,7 @@ h1{
     font-size: xx-large;
 }
 
-@media(max-width: 600px){
+@media(max-width: 768px){
     .products {
         grid-template-columns: 1fr ;
       }
@@ -28,3 +28,24 @@ h1{
           max-width: 300px;
       }
 }
+
+/* @media(max-width: 900px){
+    .products{
+       grid-template-columns: 1fr 1fr ;
+    }
+
+    .mat-card{
+        max-width: 300px;
+    }
+}
+
+@media(max-width: 320px){
+    .products{
+        display: grid;
+       grid-template-columns: 1fr ;
+    }
+
+    .mat-card{
+        max-width: 300px;
+    }
+} */

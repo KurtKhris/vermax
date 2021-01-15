@@ -1,0 +1,29 @@
+.container{
+    text-align: center;
+    margin-top: 40px;
+}
+
+h1{
+    font-size: xx-large;
+}
+.mat-card{
+    max-width: 500px;
+    margin: auto;
+}
+
+.mission{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px; */
+    margin-top: 30px;
+}
+
+@media(max-width: 768px){
+    .mission{
+        grid-template-columns: 1fr ;
+    }
+
+    .mat-card{
+        max-width: 300px;
+    }
+}
